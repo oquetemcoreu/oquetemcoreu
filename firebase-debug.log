@@ -179,3 +179,254 @@ You're about to initialize a Firebase project in this directory:
 [info] i  Writing gitignore file to .gitignore... 
 [info] 
 [info] ✔  Firebase initialization complete! 
+[debug] [2022-04-14T16:22:12.907Z] ----------------------------------------------------------------------
+[debug] [2022-04-14T16:22:12.909Z] Command:       /Users/shermam.miranda/.nodenv/versions/17.7.2/bin/node /Users/shermam.miranda/.nodenv/versions/17.7.2/bin/firebase deploy
+[debug] [2022-04-14T16:22:12.909Z] CLI Version:   10.6.0
+[debug] [2022-04-14T16:22:12.909Z] Platform:      darwin
+[debug] [2022-04-14T16:22:12.909Z] Node Version:  v17.7.2
+[debug] [2022-04-14T16:22:12.918Z] Time:          Thu Apr 14 2022 13:22:12 GMT-0300 (Brasilia Standard Time)
+[debug] [2022-04-14T16:22:12.918Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-14T16:22:12.979Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-14T16:22:12.980Z] > authorizing via signed-in user (oquetemcoreu@gmail.com)
+[debug] [2022-04-14T16:22:12.980Z] [iam] checking project oquetemcoreu-a1c8c for permissions ["cloudconfig.configs.get","cloudconfig.configs.update","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2022-04-14T16:22:12.983Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/oquetemcoreu-a1c8c:testIamPermissions [none]
+[debug] [2022-04-14T16:22:12.983Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/oquetemcoreu-a1c8c:testIamPermissions {"permissions":["cloudconfig.configs.get","cloudconfig.configs.update","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2022-04-14T16:22:13.982Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/oquetemcoreu-a1c8c:testIamPermissions 200
+[debug] [2022-04-14T16:22:13.982Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/oquetemcoreu-a1c8c:testIamPermissions {"permissions":["cloudconfig.configs.get","cloudconfig.configs.update","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2022-04-14T16:22:13.984Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/oquetemcoreu-a1c8c [none]
+[debug] [2022-04-14T16:22:14.598Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/oquetemcoreu-a1c8c 200
+[debug] [2022-04-14T16:22:14.598Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/oquetemcoreu-a1c8c {"projectId":"oquetemcoreu-a1c8c","projectNumber":"765764327508","displayName":"oquetemcoreu","name":"projects/oquetemcoreu-a1c8c","resources":{"hostingSite":"oquetemcoreu-a1c8c","storageBucket":"oquetemcoreu-a1c8c.appspot.com","locationId":"southamerica-east1"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'oquetemcoreu-a1c8c'...
+[info] 
+[info] i  deploying storage, firestore, hosting, remoteconfig 
+[debug] [2022-04-14T16:22:14.602Z] >>> [apiv2][query] GET https://appengine.googleapis.com/v1/apps/oquetemcoreu-a1c8c [none]
+[debug] [2022-04-14T16:22:15.060Z] <<< [apiv2][status] GET https://appengine.googleapis.com/v1/apps/oquetemcoreu-a1c8c 200
+[debug] [2022-04-14T16:22:15.061Z] <<< [apiv2][body] GET https://appengine.googleapis.com/v1/apps/oquetemcoreu-a1c8c {"name":"apps/oquetemcoreu-a1c8c","id":"oquetemcoreu-a1c8c","authDomain":"gmail.com","locationId":"southamerica-east1","codeBucket":"staging.oquetemcoreu-a1c8c.appspot.com","servingStatus":"SERVING","defaultHostname":"oquetemcoreu-a1c8c.rj.r.appspot.com","defaultBucket":"oquetemcoreu-a1c8c.appspot.com","serviceAccount":"oquetemcoreu-a1c8c@appspot.gserviceaccount.com","gcrDomain":"us.gcr.io","databaseType":"CLOUD_FIRESTORE","featureSettings":{"splitHealthChecks":true,"useContainerOptimizedOs":true}}
+[info] i  firebase.storage: checking storage.rules for compilation errors... 
+[debug] [2022-04-14T16:22:15.062Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/oquetemcoreu-a1c8c:test [none]
+[debug] [2022-04-14T16:22:15.062Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/oquetemcoreu-a1c8c:test [omitted]
+[debug] [2022-04-14T16:22:16.217Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/oquetemcoreu-a1c8c:test 200
+[debug] [2022-04-14T16:22:16.217Z] <<< [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/oquetemcoreu-a1c8c:test {}
+[info] ✔  firebase.storage: rules file storage.rules compiled successfully 
+[info] i  firestore: reading indexes from firestore.indexes.json... 
+[info] i  cloud.firestore: checking firestore.rules for compilation errors... 
+[debug] [2022-04-14T16:22:16.220Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/oquetemcoreu-a1c8c:test [none]
+[debug] [2022-04-14T16:22:16.220Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/oquetemcoreu-a1c8c:test [omitted]
+[debug] [2022-04-14T16:22:17.289Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/oquetemcoreu-a1c8c:test 200
+[debug] [2022-04-14T16:22:17.289Z] <<< [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/oquetemcoreu-a1c8c:test {}
+[info] ✔  cloud.firestore: rules file firestore.rules compiled successfully 
+[debug] [2022-04-14T16:22:17.291Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/oquetemcoreu-a1c8c [none]
+[debug] [2022-04-14T16:22:18.458Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/oquetemcoreu-a1c8c 200
+[debug] [2022-04-14T16:22:18.458Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/oquetemcoreu-a1c8c {"projectId":"oquetemcoreu-a1c8c","projectNumber":"765764327508","displayName":"oquetemcoreu","name":"projects/oquetemcoreu-a1c8c","resources":{"hostingSite":"oquetemcoreu-a1c8c","storageBucket":"oquetemcoreu-a1c8c.appspot.com","locationId":"southamerica-east1"},"state":"ACTIVE"}
+[debug] [2022-04-14T16:22:18.460Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/765764327508/sites/oquetemcoreu-a1c8c/versions [none]
+[debug] [2022-04-14T16:22:18.461Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/765764327508/sites/oquetemcoreu-a1c8c/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-04-14T16:22:21.140Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/765764327508/sites/oquetemcoreu-a1c8c/versions 200
+[debug] [2022-04-14T16:22:21.140Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/765764327508/sites/oquetemcoreu-a1c8c/versions {"name":"projects/765764327508/sites/oquetemcoreu-a1c8c/versions/efd854b85450da53","status":"CREATED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-04-14T16:22:21.142Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-04-14T16:22:21.143Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-04-14T16:22:21.433Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Thu, 14 Apr 2022 16:22:21 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-14T16:22:21.469Z] >>> HTTP REQUEST GET https://firebaseremoteconfig.googleapis.com/v1/projects/765764327508/remoteConfig  
+ 
+[debug] [2022-04-14T16:22:21.952Z] <<< HTTP RESPONSE 200 {"etag":"etag-765764327508-0","content-type":"application/json; charset=UTF-8","vary":"Origin, X-Origin, Referer","content-encoding":"gzip","date":"Thu, 14 Apr 2022 16:22:21 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","transfer-encoding":"chunked"}
+[debug] [2022-04-14T16:22:21.954Z] > refreshing access token with scopes: []
+[debug] [2022-04-14T16:22:21.954Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-04-14T16:22:22.267Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Thu, 14 Apr 2022 16:22:22 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-14T16:22:22.301Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/oquetemcoreu-a1c8c/releases pageSize=10&pageToken=
+[debug] [2022-04-14T16:22:23.389Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/oquetemcoreu-a1c8c/releases 200
+[debug] [2022-04-14T16:22:23.389Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/oquetemcoreu-a1c8c/releases {"releases":[{"name":"projects/oquetemcoreu-a1c8c/releases/cloud.firestore","rulesetName":"projects/oquetemcoreu-a1c8c/rulesets/1b7817ad-7ad9-4d06-9116-48133930f43a","createTime":"2022-04-14T15:59:10.204437Z","updateTime":"2022-04-14T15:59:10.204437Z"}]}
+[info] i  storage: uploading rules storage.rules... 
+[debug] [2022-04-14T16:22:23.391Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/oquetemcoreu-a1c8c/rulesets [none]
+[debug] [2022-04-14T16:22:23.391Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/oquetemcoreu-a1c8c/rulesets [omitted]
+[debug] [2022-04-14T16:22:24.543Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/oquetemcoreu-a1c8c/rulesets 200
+[debug] [2022-04-14T16:22:24.543Z] <<< [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/oquetemcoreu-a1c8c/rulesets {"name":"projects/oquetemcoreu-a1c8c/rulesets/37635299-e1af-4e55-882e-b075a66c1fd9","source":{"files":[{"content":"rules_version = '2';\nservice firebase.storage {\n  match /b/{bucket}/o {\n    match /{allPaths=**} {\n      allow read, write: if request.auth!=null;\n    }\n  }\n}\n","name":"storage.rules"}]},"createTime":"2022-04-14T16:22:24.416175Z","metadata":{"services":["firebase.storage"]}}
+[debug] [2022-04-14T16:22:24.544Z] [rules] created ruleset projects/oquetemcoreu-a1c8c/rulesets/37635299-e1af-4e55-882e-b075a66c1fd9
+[debug] [2022-04-14T16:22:24.545Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-04-14T16:22:24.545Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-04-14T16:22:24.545Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/oquetemcoreu-a1c8c/releases pageSize=10&pageToken=
+[debug] [2022-04-14T16:22:24.854Z] <<< HTTP RESPONSE 200 {"date":"Thu, 14 Apr 2022 16:22:24 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-14T16:22:24.910Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/oquetemcoreu-a1c8c/databases/(default)/collectionGroups/-/indexes  
+ 
+[debug] [2022-04-14T16:22:25.249Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 14 Apr 2022 16:22:25 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-14T16:22:25.251Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/oquetemcoreu-a1c8c/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false  
+ 
+[debug] [2022-04-14T16:22:25.593Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/oquetemcoreu-a1c8c/releases 200
+[debug] [2022-04-14T16:22:25.593Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/oquetemcoreu-a1c8c/releases {"releases":[{"name":"projects/oquetemcoreu-a1c8c/releases/cloud.firestore","rulesetName":"projects/oquetemcoreu-a1c8c/rulesets/1b7817ad-7ad9-4d06-9116-48133930f43a","createTime":"2022-04-14T15:59:10.204437Z","updateTime":"2022-04-14T15:59:10.204437Z"}]}
+[debug] [2022-04-14T16:22:25.594Z] > refreshing access token with scopes: []
+[debug] [2022-04-14T16:22:25.594Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-04-14T16:22:25.610Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 14 Apr 2022 16:22:25 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] ✔  firestore: deployed indexes in firestore.indexes.json successfully 
+[debug] [2022-04-14T16:22:25.901Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Thu, 14 Apr 2022 16:22:25 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-14T16:22:25.942Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/oquetemcoreu-a1c8c/rulesets/1b7817ad-7ad9-4d06-9116-48133930f43a [none]
+[debug] [2022-04-14T16:22:26.971Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/oquetemcoreu-a1c8c/rulesets/1b7817ad-7ad9-4d06-9116-48133930f43a 200
+[debug] [2022-04-14T16:22:26.971Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/oquetemcoreu-a1c8c/rulesets/1b7817ad-7ad9-4d06-9116-48133930f43a [omitted]
+[info] i  firestore: latest version of firestore.rules already up to date, skipping upload... 
+[info] i  hosting[oquetemcoreu-a1c8c]: beginning deploy... 
+[info] i  hosting[oquetemcoreu-a1c8c]: found 1 files in public 
+[debug] [2022-04-14T16:22:26.978Z] [hosting] uploading with 200 concurrency
+[debug] [2022-04-14T16:22:26.979Z] [hosting] hash cache [cHVibGlj] not populated
+[debug] [2022-04-14T16:22:26.985Z] [hosting] hash cache [cHVibGlj] stored for 1 files
+[debug] [2022-04-14T16:22:26.985Z] [hosting][hash queue][FINAL] {"max":3,"min":3,"avg":3,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":5}
+[debug] [2022-04-14T16:22:26.986Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/765764327508/sites/oquetemcoreu-a1c8c/versions/efd854b85450da53:populateFiles [none]
+[debug] [2022-04-14T16:22:26.986Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/765764327508/sites/oquetemcoreu-a1c8c/versions/efd854b85450da53:populateFiles {"files":{"/index.html":"898aabe4a5e8e5d78586ededdb49848c14c143b24e11db1b9a397054c31bf381"}}
+[debug] [2022-04-14T16:22:28.163Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/765764327508/sites/oquetemcoreu-a1c8c/versions/efd854b85450da53:populateFiles 200
+[debug] [2022-04-14T16:22:28.164Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/765764327508/sites/oquetemcoreu-a1c8c/versions/efd854b85450da53:populateFiles {"uploadRequiredHashes":["898aabe4a5e8e5d78586ededdb49848c14c143b24e11db1b9a397054c31bf381"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/oquetemcoreu-a1c8c/versions/efd854b85450da53/files"}
+[debug] [2022-04-14T16:22:28.165Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/oquetemcoreu-a1c8c/versions/efd854b85450da53/files/898aabe4a5e8e5d78586ededdb49848c14c143b24e11db1b9a397054c31bf381 [none]
+[debug] [2022-04-14T16:22:28.165Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/oquetemcoreu-a1c8c/versions/efd854b85450da53/files/898aabe4a5e8e5d78586ededdb49848c14c143b24e11db1b9a397054c31bf381 [stream]
+[debug] [2022-04-14T16:22:28.171Z] [hosting][populate queue][FINAL] {"max":1181,"min":1181,"avg":1181,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1187}
+[debug] [2022-04-14T16:22:28.171Z] [hosting] uploads queued: 1
+[debug] [2022-04-14T16:22:30.266Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/oquetemcoreu-a1c8c/versions/efd854b85450da53/files/898aabe4a5e8e5d78586ededdb49848c14c143b24e11db1b9a397054c31bf381 200
+[debug] [2022-04-14T16:22:30.266Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/oquetemcoreu-a1c8c/versions/efd854b85450da53/files/898aabe4a5e8e5d78586ededdb49848c14c143b24e11db1b9a397054c31bf381 [stream]
+[debug] [2022-04-14T16:22:30.266Z] [hosting][upload queue][FINAL] {"max":2102,"min":2102,"avg":2102,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2102}
+[info] ✔  hosting[oquetemcoreu-a1c8c]: file upload complete 
+[debug] [2022-04-14T16:22:30.266Z] [hosting] deploy completed after 3293ms
+[debug] [2022-04-14T16:22:30.274Z] [rules] releasing firebase.storage/oquetemcoreu-a1c8c.appspot.com with ruleset projects/oquetemcoreu-a1c8c/rulesets/37635299-e1af-4e55-882e-b075a66c1fd9
+[debug] [2022-04-14T16:22:30.275Z] >>> [apiv2][query] PATCH https://firebaserules.googleapis.com/v1/projects/oquetemcoreu-a1c8c/releases/firebase.storage/oquetemcoreu-a1c8c.appspot.com [none]
+[debug] [2022-04-14T16:22:30.276Z] >>> [apiv2][body] PATCH https://firebaserules.googleapis.com/v1/projects/oquetemcoreu-a1c8c/releases/firebase.storage/oquetemcoreu-a1c8c.appspot.com {"release":{"name":"projects/oquetemcoreu-a1c8c/releases/firebase.storage/oquetemcoreu-a1c8c.appspot.com","rulesetName":"projects/oquetemcoreu-a1c8c/rulesets/37635299-e1af-4e55-882e-b075a66c1fd9"}}
+[debug] [2022-04-14T16:22:31.327Z] <<< [apiv2][status] PATCH https://firebaserules.googleapis.com/v1/projects/oquetemcoreu-a1c8c/releases/firebase.storage/oquetemcoreu-a1c8c.appspot.com 404
+[debug] [2022-04-14T16:22:31.327Z] <<< [apiv2][body] PATCH https://firebaserules.googleapis.com/v1/projects/oquetemcoreu-a1c8c/releases/firebase.storage/oquetemcoreu-a1c8c.appspot.com {"error":{"code":404,"message":"Requested entity was not found.","status":"NOT_FOUND"}}
+[debug] [2022-04-14T16:22:31.328Z] [rules] ruleset update failed, attempting to create instead
+[debug] [2022-04-14T16:22:31.328Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/oquetemcoreu-a1c8c/releases [none]
+[debug] [2022-04-14T16:22:31.329Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/oquetemcoreu-a1c8c/releases {"name":"projects/oquetemcoreu-a1c8c/releases/firebase.storage/oquetemcoreu-a1c8c.appspot.com","rulesetName":"projects/oquetemcoreu-a1c8c/rulesets/37635299-e1af-4e55-882e-b075a66c1fd9"}
+[debug] [2022-04-14T16:22:32.485Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/oquetemcoreu-a1c8c/releases 200
+[debug] [2022-04-14T16:22:32.485Z] <<< [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/oquetemcoreu-a1c8c/releases {"name":"projects/oquetemcoreu-a1c8c/releases/firebase.storage/oquetemcoreu-a1c8c.appspot.com","rulesetName":"projects/oquetemcoreu-a1c8c/rulesets/37635299-e1af-4e55-882e-b075a66c1fd9","createTime":"2022-04-14T16:22:32.356775Z","updateTime":"2022-04-14T16:22:32.356775Z"}
+[debug] [2022-04-14T16:22:32.485Z] [rules] created release projects/oquetemcoreu-a1c8c/releases/firebase.storage/oquetemcoreu-a1c8c.appspot.com
+[info] ✔  storage: released rules storage.rules to firebase.storage 
+[debug] [2022-04-14T16:22:32.485Z] [rules] releasing cloud.firestore with ruleset projects/oquetemcoreu-a1c8c/rulesets/1b7817ad-7ad9-4d06-9116-48133930f43a
+[debug] [2022-04-14T16:22:32.485Z] >>> [apiv2][query] PATCH https://firebaserules.googleapis.com/v1/projects/oquetemcoreu-a1c8c/releases/cloud.firestore [none]
+[debug] [2022-04-14T16:22:32.485Z] >>> [apiv2][body] PATCH https://firebaserules.googleapis.com/v1/projects/oquetemcoreu-a1c8c/releases/cloud.firestore {"release":{"name":"projects/oquetemcoreu-a1c8c/releases/cloud.firestore","rulesetName":"projects/oquetemcoreu-a1c8c/rulesets/1b7817ad-7ad9-4d06-9116-48133930f43a"}}
+[debug] [2022-04-14T16:22:33.595Z] <<< [apiv2][status] PATCH https://firebaserules.googleapis.com/v1/projects/oquetemcoreu-a1c8c/releases/cloud.firestore 200
+[debug] [2022-04-14T16:22:33.595Z] <<< [apiv2][body] PATCH https://firebaserules.googleapis.com/v1/projects/oquetemcoreu-a1c8c/releases/cloud.firestore {"name":"projects/oquetemcoreu-a1c8c/releases/cloud.firestore","rulesetName":"projects/oquetemcoreu-a1c8c/rulesets/1b7817ad-7ad9-4d06-9116-48133930f43a","createTime":"2022-04-14T15:59:10.204437Z","updateTime":"2022-04-14T16:22:33.468151Z"}
+[debug] [2022-04-14T16:22:33.596Z] [rules] updated release projects/oquetemcoreu-a1c8c/releases/cloud.firestore
+[info] ✔  firestore: released rules firestore.rules to cloud.firestore 
+[debug] [2022-04-14T16:22:33.596Z] [
+  {
+    "config": {
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "oquetemcoreu-a1c8c"
+    },
+    "site": "oquetemcoreu-a1c8c",
+    "version": "projects/765764327508/sites/oquetemcoreu-a1c8c/versions/efd854b85450da53"
+  }
+]
+[info] i  hosting[oquetemcoreu-a1c8c]: finalizing version... 
+[debug] [2022-04-14T16:22:33.597Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/765764327508/sites/oquetemcoreu-a1c8c/versions/efd854b85450da53 updateMask=status
+[debug] [2022-04-14T16:22:33.597Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/765764327508/sites/oquetemcoreu-a1c8c/versions/efd854b85450da53 {"status":"FINALIZED"}
+[debug] [2022-04-14T16:22:34.872Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/765764327508/sites/oquetemcoreu-a1c8c/versions/efd854b85450da53 200
+[debug] [2022-04-14T16:22:34.872Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/765764327508/sites/oquetemcoreu-a1c8c/versions/efd854b85450da53 {"name":"projects/765764327508/sites/oquetemcoreu-a1c8c/versions/efd854b85450da53","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-04-14T16:22:19.572795Z","createUser":{"email":"oquetemcoreu@gmail.com"},"finalizeTime":"2022-04-14T16:22:34.760406Z","finalizeUser":{"email":"oquetemcoreu@gmail.com"}}
+[debug] [2022-04-14T16:22:34.872Z] [hosting] finalized version for oquetemcoreu-a1c8c:[object Object]
+[info] ✔  hosting[oquetemcoreu-a1c8c]: version finalized 
+[info] i  hosting[oquetemcoreu-a1c8c]: releasing new version... 
+[debug] [2022-04-14T16:22:34.873Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/765764327508/sites/oquetemcoreu-a1c8c/releases versionName=projects%2F765764327508%2Fsites%2Foquetemcoreu-a1c8c%2Fversions%2Fefd854b85450da53
+[debug] [2022-04-14T16:22:34.873Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/765764327508/sites/oquetemcoreu-a1c8c/releases {"message":null}
+[debug] [2022-04-14T16:22:36.125Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/765764327508/sites/oquetemcoreu-a1c8c/releases 200
+[debug] [2022-04-14T16:22:36.126Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/765764327508/sites/oquetemcoreu-a1c8c/releases {"name":"projects/765764327508/sites/oquetemcoreu-a1c8c/releases/1649953355312947","version":{"name":"projects/765764327508/sites/oquetemcoreu-a1c8c/versions/efd854b85450da53","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-04-14T16:22:19.572795Z","createUser":{"email":"oquetemcoreu@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AATXAJy7Fr0yWcTFmhcRrTDPGjwoMY2gFsyFttlOLxLv=mo"},"finalizeTime":"2022-04-14T16:22:34.760406Z","finalizeUser":{"email":"oquetemcoreu@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AATXAJy7Fr0yWcTFmhcRrTDPGjwoMY2gFsyFttlOLxLv=mo"}},"type":"DEPLOY","releaseTime":"2022-04-14T16:22:35.312947022Z","releaseUser":{"email":"oquetemcoreu@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AATXAJy7Fr0yWcTFmhcRrTDPGjwoMY2gFsyFttlOLxLv=mo"}}
+[debug] [2022-04-14T16:22:36.126Z] [hosting] release: {"name":"projects/765764327508/sites/oquetemcoreu-a1c8c/releases/1649953355312947","version":{"name":"projects/765764327508/sites/oquetemcoreu-a1c8c/versions/efd854b85450da53","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-04-14T16:22:19.572795Z","createUser":{"email":"oquetemcoreu@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AATXAJy7Fr0yWcTFmhcRrTDPGjwoMY2gFsyFttlOLxLv=mo"},"finalizeTime":"2022-04-14T16:22:34.760406Z","finalizeUser":{"email":"oquetemcoreu@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AATXAJy7Fr0yWcTFmhcRrTDPGjwoMY2gFsyFttlOLxLv=mo"}},"type":"DEPLOY","releaseTime":"2022-04-14T16:22:35.312947022Z","releaseUser":{"email":"oquetemcoreu@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AATXAJy7Fr0yWcTFmhcRrTDPGjwoMY2gFsyFttlOLxLv=mo"}}
+[info] ✔  hosting[oquetemcoreu-a1c8c]: release complete 
+[debug] [2022-04-14T16:22:36.127Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-04-14T16:22:36.127Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-04-14T16:22:36.440Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Thu, 14 Apr 2022 16:22:36 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-14T16:22:36.476Z] >>> HTTP REQUEST GET https://firebaseremoteconfig.googleapis.com/v1/projects/765764327508/remoteConfig  
+ 
+[debug] [2022-04-14T16:22:36.913Z] <<< HTTP RESPONSE 200 {"etag":"etag-765764327508-0","content-type":"application/json; charset=UTF-8","vary":"Origin, X-Origin, Referer","content-encoding":"gzip","date":"Thu, 14 Apr 2022 16:22:36 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","transfer-encoding":"chunked"}
+[debug] [2022-04-14T16:22:36.915Z] >>> HTTP REQUEST PUT https://firebaseremoteconfig.googleapis.com/v1/projects/765764327508/remoteConfig  
+ {}
+[debug] [2022-04-14T16:22:37.534Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 14 Apr 2022 16:22:37 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] ✔  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/oquetemcoreu-a1c8c/overview
+[info] Hosting URL: https://oquetemcoreu-a1c8c.web.app
+[debug] [2022-04-14T16:25:22.578Z] ----------------------------------------------------------------------
+[debug] [2022-04-14T16:25:22.579Z] Command:       /Users/shermam.miranda/.nodenv/versions/17.7.2/bin/node /Users/shermam.miranda/.nodenv/versions/17.7.2/bin/firebase serve
+[debug] [2022-04-14T16:25:22.580Z] CLI Version:   10.6.0
+[debug] [2022-04-14T16:25:22.580Z] Platform:      darwin
+[debug] [2022-04-14T16:25:22.580Z] Node Version:  v17.7.2
+[debug] [2022-04-14T16:25:22.581Z] Time:          Thu Apr 14 2022 13:25:22 GMT-0300 (Brasilia Standard Time)
+[debug] [2022-04-14T16:25:22.581Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-14T16:25:22.630Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-14T16:25:22.631Z] > authorizing via signed-in user (oquetemcoreu@gmail.com)
+[debug] [2022-04-14T16:25:22.631Z] [iam] checking project oquetemcoreu-a1c8c for permissions ["firebase.projects.get"]
+[debug] [2022-04-14T16:25:22.635Z] > refreshing access token with scopes: []
+[debug] [2022-04-14T16:25:22.636Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-04-14T16:25:22.928Z] <<< HTTP RESPONSE 200 {"date":"Thu, 14 Apr 2022 16:25:22 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-14T16:25:22.964Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/oquetemcoreu-a1c8c:testIamPermissions [none]
+[debug] [2022-04-14T16:25:22.965Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/oquetemcoreu-a1c8c:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-04-14T16:25:23.890Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/oquetemcoreu-a1c8c:testIamPermissions 200
+[debug] [2022-04-14T16:25:23.890Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/oquetemcoreu-a1c8c:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-04-14T16:25:23.891Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/oquetemcoreu-a1c8c [none]
+[debug] [2022-04-14T16:25:25.024Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/oquetemcoreu-a1c8c 200
+[debug] [2022-04-14T16:25:25.025Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/oquetemcoreu-a1c8c {"projectId":"oquetemcoreu-a1c8c","projectNumber":"765764327508","displayName":"oquetemcoreu","name":"projects/oquetemcoreu-a1c8c","resources":{"hostingSite":"oquetemcoreu-a1c8c","storageBucket":"oquetemcoreu-a1c8c.appspot.com","locationId":"southamerica-east1"},"state":"ACTIVE"}
+[info] 
+[info] === Serving from '/Users/shermam.miranda/other-projects/camilla-projects'...
+[info] 
+[debug] [2022-04-14T16:25:25.027Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/oquetemcoreu-a1c8c/sites 
+[debug] [2022-04-14T16:25:26.239Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/oquetemcoreu-a1c8c/sites 200
+[debug] [2022-04-14T16:25:26.239Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/oquetemcoreu-a1c8c/sites {"sites":[{"name":"projects/765764327508/sites/oquetemcoreu-a1c8c","defaultUrl":"https://oquetemcoreu-a1c8c.web.app","appId":"1:765764327508:web:099291978ab101726f75c1","type":"DEFAULT_SITE"}]}
+[debug] [2022-04-14T16:25:26.239Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/oquetemcoreu-a1c8c/webApps/1:765764327508:web:099291978ab101726f75c1/config [none]
+[debug] [2022-04-14T16:25:27.031Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/oquetemcoreu-a1c8c/webApps/1:765764327508:web:099291978ab101726f75c1/config 200
+[debug] [2022-04-14T16:25:27.031Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/oquetemcoreu-a1c8c/webApps/1:765764327508:web:099291978ab101726f75c1/config {"projectId":"oquetemcoreu-a1c8c","appId":"1:765764327508:web:099291978ab101726f75c1","storageBucket":"oquetemcoreu-a1c8c.appspot.com","locationId":"southamerica-east1","apiKey":"AIzaSyBm-Rn6o1-jPMyORHwQbYPXm7BWd8CSCCU","authDomain":"oquetemcoreu-a1c8c.firebaseapp.com","messagingSenderId":"765764327508","measurementId":"G-HKER55Y6XE"}
+[info] i  hosting: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [14/Apr/2022:16:25:33 +0000] "GET / HTTP/1.1" 200 4606 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [14/Apr/2022:16:25:33 +0000] \"GET / HTTP/1.1\" 200 4606 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36\""}}
+[debug] [2022-04-14T16:25:33.814Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js [none]
+[debug] [2022-04-14T16:25:33.821Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js [none]
+[debug] [2022-04-14T16:25:33.882Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.6.10/firebase-database-compat.js [none]
+[debug] [2022-04-14T16:25:33.895Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js [none]
+[debug] [2022-04-14T16:25:33.903Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.6.10/firebase-functions-compat.js [none]
+[debug] [2022-04-14T16:25:33.910Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.6.10/firebase-messaging-compat.js [none]
+[debug] [2022-04-14T16:25:34.035Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js 200
+[debug] [2022-04-14T16:25:34.035Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js [stream]
+[info] i  hosting: ::1 - - [14/Apr/2022:16:25:34 +0000] "GET /__/firebase/9.6.10/firebase-app-compat.js HTTP/1.1" 200 8285 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [14/Apr/2022:16:25:34 +0000] \"GET /__/firebase/9.6.10/firebase-app-compat.js HTTP/1.1\" 200 8285 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36\""}}
+[debug] [2022-04-14T16:25:34.038Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js 200
+[debug] [2022-04-14T16:25:34.038Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js [stream]
+[debug] [2022-04-14T16:25:34.042Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.6.10/firebase-storage-compat.js [none]
+[debug] [2022-04-14T16:25:34.074Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.6.10/firebase-database-compat.js 200
+[debug] [2022-04-14T16:25:34.074Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.6.10/firebase-database-compat.js [stream]
+[info] i  hosting: ::1 - - [14/Apr/2022:16:25:34 +0000] "GET /__/firebase/9.6.10/firebase-auth-compat.js HTTP/1.1" 200 35601 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [14/Apr/2022:16:25:34 +0000] \"GET /__/firebase/9.6.10/firebase-auth-compat.js HTTP/1.1\" 200 35601 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36\""}}
+[debug] [2022-04-14T16:25:34.086Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics-compat.js [none]
+[debug] [2022-04-14T16:25:34.095Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js 200
+[debug] [2022-04-14T16:25:34.095Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js [stream]
+[debug] [2022-04-14T16:25:34.103Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.6.10/firebase-messaging-compat.js 200
+[debug] [2022-04-14T16:25:34.103Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.6.10/firebase-messaging-compat.js [stream]
+[debug] [2022-04-14T16:25:34.106Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.6.10/firebase-functions-compat.js 200
+[debug] [2022-04-14T16:25:34.106Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.6.10/firebase-functions-compat.js [stream]
+[info] i  hosting: ::1 - - [14/Apr/2022:16:25:34 +0000] "GET /__/firebase/9.6.10/firebase-functions-compat.js HTTP/1.1" 200 7949 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [14/Apr/2022:16:25:34 +0000] \"GET /__/firebase/9.6.10/firebase-functions-compat.js HTTP/1.1\" 200 7949 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36\""}}
+[debug] [2022-04-14T16:25:34.112Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.6.10/firebase-remote-config-compat.js [none]
+[info] i  hosting: ::1 - - [14/Apr/2022:16:25:34 +0000] "GET /__/firebase/9.6.10/firebase-messaging-compat.js HTTP/1.1" 200 36391 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [14/Apr/2022:16:25:34 +0000] \"GET /__/firebase/9.6.10/firebase-messaging-compat.js HTTP/1.1\" 200 36391 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36\""}}
+[debug] [2022-04-14T16:25:34.161Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.6.10/firebase-performance-compat.js [none]
+[info] i  hosting: ::1 - - [14/Apr/2022:16:25:34 +0000] "GET /__/firebase/9.6.10/firebase-database-compat.js HTTP/1.1" 200 165337 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [14/Apr/2022:16:25:34 +0000] \"GET /__/firebase/9.6.10/firebase-database-compat.js HTTP/1.1\" 200 165337 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [14/Apr/2022:16:25:34 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [14/Apr/2022:16:25:34 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [14/Apr/2022:16:25:34 +0000] "GET /__/firebase/9.6.10/firebase-firestore-compat.js HTTP/1.1" 200 302801 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [14/Apr/2022:16:25:34 +0000] \"GET /__/firebase/9.6.10/firebase-firestore-compat.js HTTP/1.1\" 200 302801 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36\""}}
+[debug] [2022-04-14T16:25:34.259Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.6.10/firebase-storage-compat.js 200
+[debug] [2022-04-14T16:25:34.260Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.6.10/firebase-storage-compat.js [stream]
+[debug] [2022-04-14T16:25:34.299Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics-compat.js 200
+[debug] [2022-04-14T16:25:34.299Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics-compat.js [stream]
+[info] i  hosting: ::1 - - [14/Apr/2022:16:25:34 +0000] "GET /__/firebase/9.6.10/firebase-storage-compat.js HTTP/1.1" 200 38245 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [14/Apr/2022:16:25:34 +0000] \"GET /__/firebase/9.6.10/firebase-storage-compat.js HTTP/1.1\" 200 38245 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36\""}}
+[debug] [2022-04-14T16:25:34.335Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.6.10/firebase-remote-config-compat.js 200
+[debug] [2022-04-14T16:25:34.335Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.6.10/firebase-remote-config-compat.js [stream]
+[info] i  hosting: ::1 - - [14/Apr/2022:16:25:34 +0000] "GET /__/firebase/9.6.10/firebase-analytics-compat.js HTTP/1.1" 200 24323 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [14/Apr/2022:16:25:34 +0000] \"GET /__/firebase/9.6.10/firebase-analytics-compat.js HTTP/1.1\" 200 24323 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36\""}}
+[debug] [2022-04-14T16:25:34.373Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.6.10/firebase-performance-compat.js 200
+[debug] [2022-04-14T16:25:34.373Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.6.10/firebase-performance-compat.js [stream]
+[info] i  hosting: ::1 - - [14/Apr/2022:16:25:34 +0000] "GET /__/firebase/9.6.10/firebase-remote-config-compat.js HTTP/1.1" 200 25798 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [14/Apr/2022:16:25:34 +0000] \"GET /__/firebase/9.6.10/firebase-remote-config-compat.js HTTP/1.1\" 200 25798 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [14/Apr/2022:16:25:34 +0000] "GET /__/firebase/9.6.10/firebase-performance-compat.js HTTP/1.1" 200 29123 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [14/Apr/2022:16:25:34 +0000] \"GET /__/firebase/9.6.10/firebase-performance-compat.js HTTP/1.1\" 200 29123 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [14/Apr/2022:16:25:34 +0000] "GET /favicon.ico HTTP/1.1" 200 4606 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [14/Apr/2022:16:25:34 +0000] \"GET /favicon.ico HTTP/1.1\" 200 4606 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36\""}}
